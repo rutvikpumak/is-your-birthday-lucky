@@ -11,9 +11,14 @@
         overflow-y: hidden;
     }
     .container .date{
-        width:auto;
+        width:35%;
     }
-   
+    .container h1{
+       font-size: 2rem;
+    }
+    .container textArea{
+       width:auto
+    }
 
 }
 body {
