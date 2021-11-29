@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,27 @@
     <title>Birthday Lucky Or Not</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-    <h1>Is Your Birthday Lucky?</h1>
-    
-        <label>Date of Birth</label>
-        <input type="date" class="date" id="birth-date">
-        <label>Enter your Lucky Number</label>
-        <input type="number" class="number" id="lucky-no">
-        <button class="submit">Check Number</button>
+        <img src="emoji.png" alt="emoji" class="emoji">
+        <h1>Is Your Birthday Lucky ? </h1>
 
-        <textArea class="output">
+        <label class="dob">Date of Birth</label>
+        <input type="date" class="date" id="birth-date">
+        <label class="numberLabel">Enter your Lucky Number</label>
+        <input type="number" class="number" id="lucky-no">
+        <div class=button>
+            <button class="submit">Check</button>
+            <button class="reset">Reset</button>
+        </div>
+        <p class="error"></p>
+        <textArea class="output" readonly>
 
         </textArea>
-    
+
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
