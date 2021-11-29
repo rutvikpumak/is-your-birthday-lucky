@@ -12,6 +12,7 @@
     }
     .container .date{
         width:45%;
+        color: white;
     }
     .container h1{
        font-size: 2rem;
