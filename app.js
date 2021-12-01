@@ -14,7 +14,10 @@ submitBtn.addEventListener("click", () => {
         errorMsg.innerText = "Please enter your lucky number"
     } else if (dateOfBirth.value === "") {
         errorMsg.innerText = "Please enter your Date of Birth"
-    } else {
+    } else if(parseInt(luckyNo.value) < 1){
+        errorMsg.innerText = "Lucky number should be greater than 0";
+        luckyNo.value = "";
+    }else {
         errorMsg.innerText = ""
         const date = dateOfBirth.value.replaceAll('-', '').split('');
         let sumOfDates = 0;
